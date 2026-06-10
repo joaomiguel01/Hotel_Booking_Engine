@@ -13,6 +13,11 @@
         `;
 
         document.body.append(element);
+        setTimeout(remAlert, 2000);
+    }
+
+    function remAlert(){
+        document.getElementByClassName('alert')[0].remove();
     }
 
     function setActive()
